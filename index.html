@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya Shop</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-menu">
-          <div class="logo">
-            <a href="index.html" class="logo__link"
-              ><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img"
-            /></a>
-          </div>
-          <!-- /.logo -->
-          <ul class="header-menu__list">
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Home</a>
-            </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Landings</a>
-            </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Pages</a>
-            </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Docs</a>
-            </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Help</a>
-            </li>
-            <li class="header-menu__item">
-              <button class="button header-menu__button">
-                Get it now
-              </button>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehya Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-menu">
+        <div class="logo">
+          <a href="index.html" class="logo__link"><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img" /></a>
         </div>
-        <!-- /.header-menu -->
+        <!-- /.logo -->
+        <ul class="header-menu__list header-menu__list--hidden">
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Landings</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Pages</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Docs</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Help</a>
+          </li>
+          <li class="header-menu__item">
+            <button class="button header-menu__button">
+              Get it now
+            </button>
+          </li>
+        </ul>
+        <!-- менюшка для мобилки -->
+        <ul class="header-menu__list header-menu__list--visible">
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Landings</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Pages</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Docs</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link">Help</a>
+          </li>
+          <li class="header-menu__item">
+            <button class="button header-menu__button">
+              Get it now
+            </button>
+          </li>
+        </ul>
+        <button class="menu-button header-menu__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
-      <!-- /.contaoner -->
-    </header>
-    <!-- /.header -->
-  </body>
+      <!-- /.header-menu -->
+    </div>
+    <!-- /.contaoner -->
+  </header>
+  <!-- /.header -->
+</body>
+
 </html>

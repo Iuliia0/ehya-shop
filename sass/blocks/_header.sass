@@ -1,15 +1,18 @@
 .header
-  padding: 36px 0 36px 0
-  &-menu 
+  padding-bottom: 36px
+  &-menu
     display: flex
     align-items: center
     justify-content: space-between
+    height: 100px
     &__list
       display: flex
       align-items: center
       justify-content: space-between
       list-style: none
       width: 605px
+      &--visible
+        display: none
     &__link
       text-decoration: none
       color: $dark
@@ -28,3 +31,6 @@
       font-size: 16px
       line-height: 22px
       text-align: center
+      cursor: pointer
+    &__menu-button
+      display: none
