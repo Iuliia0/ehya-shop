@@ -1,78 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ehya Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-menu">
-        <div class="logo">
-          <a href="index.html" class="logo__link"><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img" /></a>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <div class="logo">
+            <a href="index.html" class="logo__link"
+              ><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img"
+            /></a>
+          </div>
+          <!-- /.logo -->
+          <ul class="header-menu__list header-menu__list--hidden">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Home</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Landings</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Pages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Docs</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Help</a>
+            </li>
+            <li class="header-menu__item">
+              <button class="button header-menu__button">
+                Get it now
+              </button>
+            </li>
+          </ul>
+          <!-- менюшка для мобилки -->
+          <ul class="header-menu__list header-menu__list--visible">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Home</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Landings</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Pages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Docs</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Help</a>
+            </li>
+            <li class="header-menu__item">
+              <button class="button header-menu__button">
+                Get it now
+              </button>
+            </li>
+          </ul>
+          <button class="menu-button header-menu__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
-        <!-- /.logo -->
-        <ul class="header-menu__list header-menu__list--hidden">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Landings</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Pages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Docs</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Help</a>
-          </li>
-          <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
-          </li>
-        </ul>
-        <!-- менюшка для мобилки -->
-        <ul class="header-menu__list header-menu__list--visible">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Landings</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Pages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Docs</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Help</a>
-          </li>
-          <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
-          </li>
-        </ul>
-        <button class="menu-button header-menu__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-        </button>
+        <!-- /.header-menu -->
       </div>
-      <!-- /.header-menu -->
-    </div>
-    <!-- /.contaoner -->
-  </header>
-  <!-- /.header -->
-</body>
-
+      <!-- /.contaoner -->
+    </header>
+    <!-- /.header -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-wrapper">
+          <div class="hero__hashtag"># READY TO BE COOL</div>
+          <!-- /.hero__hashtag -->
+          <h1 class="hero__titel">
+            Cause Everyone Deserve to be Cool & Fashionable
+          </h1>
+          <p class="hero__text">
+            How you can be a Cool People or Fashionista Society. To solve this
+            you should wear a great clothes and updated your style. You can
+            search here. Explore Now!
+          </p>
+          <button class="hero__button">Take Exploration</button>
+          <div class="hero-payment">
+            <div class="hero-payment__wrapper">
+              <div class="hero-payment__item">
+                <img
+                  src="img/Donation.svg"
+                  alt="Icon: Payment"
+                  class="hero-payment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item --><span class="hero-payment__text"
+                >COD Payment</span
+              >
+              <div class="hero-payment__item">
+                <img
+                  src="img/Guarantee.svg"
+                  alt="Icon: Guarante"
+                  class="hero-payment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item -->
+              <span class="hero-payment__text">Guarantee</span>
+              <div class="hero-payment__item">
+                <img
+                  src="img/Quality.svg"
+                  alt="Icon: Quality"
+                  class="hero-paiment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item -->
+              <span class="hero-payment__text">Quality</span>
+            </div>
+          </div>
+          <!-- /.hero-payment -->
+        </div>
+        <!-- /.hero-wrapper -->
+      </div>
+      <!-- /.hero-container -->
+    </section>
+    <!-- /.hero -->
+  </body>
 </html>
