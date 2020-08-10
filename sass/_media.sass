@@ -2,13 +2,28 @@
   .container
     max-width: 960px
   .hero
+    margin-bottom: 80px
     &-container
       width: 90%
       background-position-x: 200px
     &-wrapper
       background-position-x: 197px
       padding-left: 80px
-
+  .collection
+    &-wrapper
+      flex-direction: row
+      flex-wrap: wrap
+    &-block
+      flex-basis: 100%
+      justify-content: center
+      margin-bottom: 50px
+      margin-right: 0
+      &__left
+        width: 322px
+        margin-right: 50px
+    &-info
+      flex-basis: 100%
+      justify-content: center
 
 @media ( max-width: 1300px)
   .hero
@@ -48,7 +63,15 @@
         transform: none
       &:active
         transform: none
-        
+  .collection
+    &-info
+      &__titel
+        margin-top: 0
+      &__button
+        &:hover
+          transform: none
+        &:active
+          transform: none
 
 @media ( max-width: 768px)
   .container
@@ -80,6 +103,7 @@
       border-radius: 5px
   .hero
     padding-bottom: 80px
+    margin: 0
     &-container
       width: 95%
       background-position-x: 30px
@@ -96,7 +120,12 @@
       margin-bottom: 36px
       &__text
         margin-right: 20px
-
+  .collection
+    &-wrapper
+    &-block
+      margin-bottom: 34px
+      &__left
+        margin-right: 30px
 
 @media ( max-width: 576px)
   .container
@@ -149,8 +178,6 @@
       &__img
         height: 15px
         width: 15px
-        
-          
 
 @media ( max-width: 320px)
   .container

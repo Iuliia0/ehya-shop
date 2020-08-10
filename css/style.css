@@ -652,6 +652,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 490px;
 }
 
 .collection-block__item {
@@ -687,7 +688,8 @@ template {
   font-weight: normal;
   font-size: 20px;
   line-height: 36px;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
+  margin-top: 0;
 }
 
 .collection-info__button {
@@ -720,7 +722,7 @@ template {
 }
 
 .collection__arrow {
-  margin-left: 20px;
+  margin-left: 28px;
 }
 
 @-webkit-keyframes Button {
@@ -737,6 +739,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .hero {
+    margin-bottom: 80px;
+  }
   .hero-container {
     width: 90%;
     background-position-x: 200px;
@@ -744,6 +749,34 @@ template {
   .hero-wrapper {
     background-position-x: 197px;
     padding-left: 80px;
+  }
+  .collection-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .collection-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .collection-block__left {
+    width: 322px;
+    margin-right: 50px;
+  }
+  .collection-info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -794,6 +827,17 @@ template {
     -webkit-transform: none;
             transform: none;
   }
+  .collection-info__titel {
+    margin-top: 0;
+  }
+  .collection-info__button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .collection-info__button:active {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -837,6 +881,7 @@ template {
   }
   .hero {
     padding-bottom: 80px;
+    margin: 0;
   }
   .hero-container {
     width: 95%;
@@ -859,6 +904,12 @@ template {
   }
   .hero-payment__text {
     margin-right: 20px;
+  }
+  .collection-block {
+    margin-bottom: 34px;
+  }
+  .collection-block__left {
+    margin-right: 30px;
   }
 }
 
