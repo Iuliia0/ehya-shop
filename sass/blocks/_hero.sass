@@ -59,6 +59,13 @@
     border: none
     border-radius: 8px
     margin-bottom: 48px
+    cursor: pointer
+    &:hover
+      background: transparent
+      color: $dark
+      transform: scale(1.1)
+    &:active
+      transform: scale(1)
   &-payment
     margin-bottom: 46px
     &__wrapper
@@ -77,7 +84,7 @@
     &__img
       width: 22px
       height: 22px
-      border: 0.75px dashed rgb(21, 101, 216)
+      border: 0.75px dashed $text-color
     &__text
       font-family: 'HK Grotesk', sans-serif
       font-style: normal
