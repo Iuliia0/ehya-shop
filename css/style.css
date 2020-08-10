@@ -31,6 +31,10 @@ body {
   font-display: swap;
 }
 
+button:focus {
+  outline: none;
+}
+
 .container {
   width: 1140px;
   margin: auto;
@@ -435,6 +439,8 @@ template {
   line-height: 22px;
   text-align: center;
   cursor: pointer;
+  min-width: 130px;
+  min-height: 47px;
 }
 
 .header-menu__button:hover {
@@ -449,6 +455,10 @@ template {
 
 .header-menu__menu-button {
   display: none;
+}
+
+.hero {
+  margin-bottom: 120px;
 }
 
 .hero-container {
@@ -582,7 +592,7 @@ template {
 .hero-payment__img {
   width: 22px;
   height: 22px;
-  border: 0.75px dashed #5A7184;
+  border: 0.7px dashed #5A7184;
 }
 
 .hero-payment__text {
@@ -594,6 +604,123 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   margin-right: 30px;
+}
+
+.collection {
+  margin-bottom: 145px;
+}
+
+.collection-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collection-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 670px;
+  margin-right: 58px;
+}
+
+.collection-block__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  height: 490px;
+  overflow: hidden;
+  margin-right: 30px;
+  border-radius: 8px;
+}
+
+.collection-block__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collection-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.collection-block__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection-info__titel {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  color: #183B56;
+}
+
+.collection-info__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.collection-info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  color: #1565D8;
+  background: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 0;
+}
+
+.collection-info__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.collection-info__button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.collection__arrow {
+  margin-left: 20px;
 }
 
 @-webkit-keyframes Button {
@@ -630,6 +757,14 @@ template {
   .container {
     max-width: 720px;
   }
+  .header-menu__button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .header-menu__button:active {
+    -webkit-transform: none;
+            transform: none;
+  }
   .hero-container {
     background-position-x: 100px;
   }
@@ -648,6 +783,16 @@ template {
     line-height: 32px;
     margin-bottom: 36px;
     width: 400px;
+  }
+  .hero__button:hover {
+    background-color: #183B56;
+    color: #ffffff;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .hero__button:active {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -772,9 +917,18 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 264px;
+  }
+  .hero-payment__item {
+    width: 22px;
+    height: 22px;
   }
   .hero-payment__text:nth-child(4) {
     margin-right: 0;
+  }
+  .hero-payment__img {
+    height: 15px;
+    width: 15px;
   }
 }
 
