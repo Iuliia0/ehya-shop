@@ -739,7 +739,7 @@ template {
 }
 
 .trending {
-  margin-bottom: 145px;
+  margin-bottom: 105px;
 }
 
 .trending-navbar {
@@ -934,6 +934,78 @@ template {
   color: #ffffff;
   letter-spacing: 0.2px;
   margin: 0 74px;
+}
+
+.testimonial {
+  padding-bottom: 80px;
+}
+
+.testimonial-slider {
+  max-width: 800px;
+  margin: auto;
+}
+
+.testimonial-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial__item {
+  margin-bottom: 16px;
+  width: 80px;
+  height: 92px;
+}
+
+.testimonial__quote {
+  width: 100%;
+}
+
+.testimonial__text {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+  color: #5A7184;
+  margin: 0 0 28px 0;
+}
+
+.testimonial__titel {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0 0 53px 0;
+}
+
+.testimonial__titel--hidden {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #183B56;
 }
 
 @-webkit-keyframes Button {
@@ -1168,9 +1240,32 @@ template {
   .collection-info__text {
     margin-bottom: 28px;
   }
+  .trending {
+    margin-bottom: 39px;
+  }
   .trending-ware {
     max-width: 608px;
     margin: auto;
+  }
+  .testimonial {
+    padding-bottom: 80px;
+  }
+  .testimonial-slider {
+    max-width: 630px;
+  }
+  .testimonial__item {
+    margin-bottom: 0;
+    width: 70px;
+    height: 81px;
+  }
+  .testimonial__text {
+    margin-bottom: 36px;
+  }
+  .testimonial__titel {
+    margin-bottom: 41px;
+  }
+  .testimonial__titel--hidden {
+    display: inline-block;
   }
 }
 
@@ -1433,6 +1528,9 @@ template {
   }
   .collection-info__text {
     width: 280px;
+  }
+  .trending {
+    margin-bottom: 37px;
   }
   .trending-ware {
     margin: auto;
