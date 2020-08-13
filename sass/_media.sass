@@ -10,11 +10,12 @@
       background-position-x: 197px
       padding-left: 80px
   .collection
+    &-container
+      max-width: 960px
     &-wrapper
       flex-direction: row
       flex-wrap: wrap
     &-block
-      flex-basis: 100%
       justify-content: center
       margin-bottom: 50px
       margin-right: 0
@@ -64,6 +65,13 @@
       &:active
         transform: none
   .collection
+    margin-bottom: 80px
+    &-container
+      max-width: 720px
+    &-block
+      flex-basis: 100%
+      &__left
+        margin-right: 5%
     &-info
       &__titel
         margin-top: 0
@@ -122,10 +130,20 @@
         margin-right: 20px
   .collection
     &-wrapper
+      max-width: 672px
+      margin-left: -11px
+      overflow: visible
     &-block
       margin-bottom: 34px
+
       &__left
-        margin-right: 30px
+        // flex-basis: 48%
+      &__item
+        max-width: 320px
+        max-height: 230px
+    &-info
+      &__text
+        margin-bottom: 28px
 
 @media ( max-width: 576px)
   .container
@@ -164,11 +182,12 @@
       line-height: 22px
       margin-bottom: 17px
     &-payment
-      margin-bottom: 36px
+      margin-bottom: 29px
       &__wrapper
         flex-wrap: wrap
         justify-content: center
         width: 264px
+        height: 75px
       &__item
         width: 22px
         height: 22px
@@ -178,17 +197,73 @@
       &__img
         height: 15px
         width: 15px
+  .collection
+    margin-bottom: 64px
+    &-wrapper
+      margin-left: 0
+    &-block
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      height: min-content
+      margin-bottom: 0
+      
+      &__left
+        margin-right: 0
+        max-width: 290px
+        height: 300px
+        margin-bottom: 14px
+      &__right
+        flex-direction: row
+        height: min-content
+        margin-bottom: 36px
+      &__item
+        margin-right: 14px
+        width: 138px
+        height: 97px
+        &:last-child
+          margin-right: 0
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__titel
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 15px
+      &__text
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 24px
+        text-align: center
+      &__button
+        font-size: 16px
+        line-height: 22px
 
 @media ( max-width: 320px)
   .container
     max-width: 272px
-
-  
+    overflow: visible
   .header
     padding-top: 0
     padding-bottom: 24px
     &-menu
       height: 64px
+  .collection
+    &-block
+      &__left
+        min-width: 290px
+        height: 300px
+    &-info
+      margin-left: -9px
+      &__titel
+        width: 290px
+      &__text
+        width: 280px
+      
+
+@-moz-document url-prefix('https://emelianova-julia.ru/ehya-shop/') 
+  margin-left: -11px 
 
 
 
