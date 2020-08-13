@@ -773,7 +773,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 366px;
+  width: 366px;
   list-style: none;
   font-style: normal;
   font-weight: normal;
@@ -815,6 +815,10 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 50px;
+}
+
+.trending-ware__product-cell_hidden {
+  display: none;
 }
 
 .trending-ware__item {
@@ -921,60 +925,6 @@ template {
   margin: 0 74px;
 }
 
-.img-2 {
-  width: 500px;
-  position: absolute;
-  left: 58%;
-  top: 98%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.img-3 {
-  width: 400px;
-  position: absolute;
-  left: 46%;
-  top: 75%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.img-4 {
-  width: 380px;
-  position: absolute;
-  left: 45%;
-  top: 46%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.img-5 {
-  width: 300px;
-  position: absolute;
-  left: 53%;
-  top: 59%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.img-6 {
-  width: 600px;
-  position: absolute;
-  left: 61%;
-  top: 116%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.img-7 {
-  width: 493px;
-  position: absolute;
-  left: 50%;
-  top: 104%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 @-webkit-keyframes Button {
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -1028,6 +978,11 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .trending-ware__product-cell_hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1101,6 +1056,24 @@ template {
   .collection-info__button:active {
     -webkit-transform: none;
             transform: none;
+  }
+  .trending {
+    margin-bottom: 80px;
+  }
+  .trending-navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trending__titel {
+    margin-bottom: 28px;
+  }
+  .trending-ware__product-cell_hidden {
+    display: none;
+  }
+  .trending-ware__item {
+    width: 280px;
   }
 }
 
@@ -1183,6 +1156,10 @@ template {
   }
   .collection-info__text {
     margin-bottom: 28px;
+  }
+  .trending-ware {
+    max-width: 608px;
+    margin: auto;
   }
 }
 
@@ -1328,6 +1305,97 @@ template {
     font-size: 16px;
     line-height: 22px;
   }
+  .trending {
+    margin-bottom: 48px;
+  }
+  .trending-navbar {
+    margin-bottom: 36px;
+  }
+  .trending__titel {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .trending__list {
+    width: 290px;
+  }
+  .trending__item {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .trending__item--active {
+    font-weight: bold;
+    color: #183B56;
+  }
+  .trending-ware {
+    min-width: 290px;
+  }
+  .trending-ware__product-cell {
+    margin-bottom: 20px;
+  }
+  .trending-ware__product-cell_hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .trending-ware__item {
+    margin-bottom: 13px;
+    width: 140px;
+    height: 170px;
+  }
+  .trending-ware__titel {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .trending-ware__buy {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trending-ware__price {
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 9px;
+    margin-left: 0;
+  }
+  .trending-ware__cart {
+    width: 12px;
+    height: 13px;
+  }
+  .trending-ware__wrapper {
+    width: 140px;
+    height: 234px;
+  }
+  .trending-ware__see-more {
+    width: 140px;
+    height: 170px;
+  }
+  .trending-ware__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trending-ware__plus {
+    width: 25px;
+    height: 32px;
+    margin-bottom: 21px;
+  }
+  .trending-ware__text {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 521px) {
+  .trending-ware__product-cell_hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1355,9 +1423,12 @@ template {
   .collection-info__text {
     width: 280px;
   }
-}
-
-@-moz-document url-prefix('https://emelianova-julia.ru/ehya-shop/') {
-  margin-left: -11px;
+  .trending-ware {
+    margin: auto;
+    margin-left: -9px;
+  }
+  .trending-ware__product-cell_hidden {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

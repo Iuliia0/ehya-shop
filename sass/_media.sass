@@ -25,6 +25,11 @@
     &-info
       flex-basis: 100%
       justify-content: center
+  .trending
+    &-ware
+      &__product-cell
+        &_hidden
+          display: flex
 
 @media ( max-width: 1300px)
   .hero
@@ -80,6 +85,18 @@
           transform: none
         &:active
           transform: none
+  .trending
+    margin-bottom: 80px
+    &-navbar
+      flex-direction: column
+    &__titel
+      margin-bottom: 28px
+    &-ware
+      &__product-cell
+        &_hidden
+          display: none
+      &__item
+        width: 280px
 
 @media ( max-width: 768px)
   .container
@@ -144,6 +161,10 @@
     &-info
       &__text
         margin-bottom: 28px
+  .trending
+    &-ware
+      max-width: 608px
+      margin: auto
 
 @media ( max-width: 576px)
   .container
@@ -239,7 +260,82 @@
       &__button
         font-size: 16px
         line-height: 22px
-
+  .trending
+    margin-bottom: 48px
+    &-navbar
+      margin-bottom: 36px
+    &__titel
+      font-size: 28px
+      line-height: 36px
+    &__list
+      width: 290px
+    &__item
+      font-size: 16px
+      line-height: 22px
+      &--active
+        font-weight: bold
+        color: $dark
+    &-ware
+      min-width: 290px
+      &__product-cell
+        margin-bottom: 20px
+        &_hidden
+          display: flex
+      &__item
+        margin-bottom: 13px
+        width: 140px
+        height: 170px
+      &__titel
+        font-size: 16px
+        line-height: 20px
+        margin: 0
+      &__buy
+        justify-content: flex-start
+        align-items: center
+      &__price
+        font-size: 14px
+        line-height: 24px
+        margin-right: 9px
+        margin-left: 0
+      &__cart
+        width: 12px
+        height: 13px
+      &__wrapper
+        width: 140px
+        height: 234px
+      &__see-more
+        width: 140px
+        height: 170px
+      &__button
+        justify-content: center
+        align-items: center
+      &__plus
+        width: 25px
+        height: 32px
+        margin-bottom: 21px
+      &__text
+        font-size: 20px
+        margin: 0      
+  // .img
+  //   &-2
+  //     width: 252px
+  //   &-3
+  //     width: 175px
+  //     top: 67%
+  //   &-4
+  //     width: 183px
+  //   &-5
+  //     width: 151px
+  //   &-6
+  //     width: 300px
+  //   &-7
+  //     width: 240px
+@media ( max-width: 521px)
+  .trending
+    &-ware
+      &__product-cell
+        &_hidden
+          display: none
 @media ( max-width: 320px)
   .container
     max-width: 272px
@@ -260,10 +356,12 @@
         width: 290px
       &__text
         width: 280px
-      
-
-@-moz-document url-prefix('https://emelianova-julia.ru/ehya-shop/') 
-  margin-left: -11px 
-
+  .trending
+    &-ware
+      margin: auto
+      margin-left: -9px
+      &__product-cell
+        &_hidden
+          display: none
 
 
