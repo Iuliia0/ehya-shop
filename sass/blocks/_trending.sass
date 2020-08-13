@@ -27,6 +27,7 @@
     padding: 0
     color: $text-color
   &__item
+    cursor: pointer
     &--active
       font-style: normal
       font-weight: bold
@@ -34,10 +35,12 @@
       line-height: 25px
       color: $dark
   &-ware
-    display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: space-between
+    display: none
+    &--active
+      display: flex
     &__product-cell
       display: flex
       flex-direction: column
@@ -51,8 +54,9 @@
       margin-bottom: 20px
       border-radius: 8px
       overflow: hidden
-      position: relative
+      // position: relative
     &__img
+      width: 100%
       object-fit: cover
     &__titel
       font-family: 'HK Grotesk', sans-serif
@@ -91,9 +95,11 @@
       border-radius: 8px
     &__button
       display: flex
+      align-items: center
       flex-direction: column
       border: none
       background-color: transparent
+
     &__plus
       margin-bottom: 35px
     &__text
