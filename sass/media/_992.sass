@@ -1,0 +1,70 @@
+@media ( max-width: 992px)
+  .container
+    max-width: 720px
+  .header
+    &-menu
+      &__button
+        &:hover
+          transform: none
+        &:active
+          transform: none
+  .hero
+    &-container
+      background-position-x: 100px
+    &-wrapper
+      padding-left: 50px
+      background-position-x: 90px
+    &__titel
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+      width: 410px
+    &__text
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+      width: 400px
+    &__button
+      &:hover
+        background-color: $dark
+        color: $light
+        transform: none
+      &:active
+        transform: none
+  .collection
+    margin-bottom: 80px
+    &-container
+      max-width: 720px
+    &-block
+      flex-basis: 100%
+      &__left
+        margin-right: 5%
+    &-info
+      &__titel
+        margin-top: 0
+      &__button
+        &:hover
+          transform: none
+        &:active
+          transform: none
+  .trending
+    margin-bottom: 80px
+    &-navbar
+      flex-direction: column
+    &__titel
+      margin-bottom: 28px
+    &-ware
+      &__product-cell
+        &_hidden
+          display: none
+      &__item
+        width: 280px
+  .stories
+    &-slide
+      &__wrapper
+        margin-left: 6%
+    &__button
+      &--prev
+        top: 33%
+      &--next
+        top: 33%
