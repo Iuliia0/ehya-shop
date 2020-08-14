@@ -166,6 +166,9 @@
     &-ware
       max-width: 608px
       margin: auto
+      justify-content: center
+      &__product-cell
+        margin-right: 10px
   .testimonial
     padding-bottom: 80px
     &-slider
@@ -178,7 +181,7 @@
       margin-bottom: 36px
     &__titel
       margin-bottom: 41px
-      &--hidden
+      &_hidden
         display: inline-block
 
 @media ( max-width: 576px)
@@ -292,8 +295,10 @@
         color: $dark
     &-ware
       min-width: 290px
+      justify-content: space-between
       &__product-cell
         margin-bottom: 25px
+        margin-right: 0
         &_hidden
           display: flex
       &__item
@@ -332,7 +337,12 @@
         font-size: 20px
         margin: 0      
   .testimonial
-    &-slider
+    &__text
+      font-size: 18px
+      line-height: 36px
+    &__titel
+      font-size: 20px
+      line-height: 24px
 @media ( max-width: 521px)
   .trending
     &-ware

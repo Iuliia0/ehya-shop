@@ -11,6 +11,9 @@ $(document).ready(function () {
   });
 
   var testimonialSlider = new Swiper(".testimonial-slider", {
+    autoplay: {
+      delay: 7000,
+    },
     autoHeight: true,
     pagination: {
       el: ".swiper-pagination",
@@ -18,9 +21,24 @@ $(document).ready(function () {
       dynamicMainBullets: 3,
     },
     loop: true,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
+
+  });
+  $(".testimonial-slider").hover(function () {
+    (this).swiper.autoplay.stop();
+  }, function () {
+    (this).swiper.autoplay.start();
+  });
+  var storiesSlider = new Swiper(".stories-slide", {
+
+    spaceBetween: 20,
+    freeMode: true,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.stories-slide__button--next',
+      prevEl: '.stories-slide__button--prev',
     },
   });
 });
