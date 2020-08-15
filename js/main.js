@@ -11,9 +11,9 @@ $(document).ready(function () {
   });
 
   var testimonialSlider = new Swiper(".testimonial-slider", {
-    autoplay: {
-      delay: 7000,
-    },
+    // autoplay: {
+    //   delay: 7000,
+    // },
     autoHeight: true,
     pagination: {
       el: ".swiper-pagination",
@@ -23,17 +23,16 @@ $(document).ready(function () {
     loop: true,
 
   });
-  $(".testimonial-slider").hover(function () {
-    (this).swiper.autoplay.stop();
-  }, function () {
-    (this).swiper.autoplay.start();
-  });
+  // $(".testimonial-slider").hover(function () {
+  //   (this).swiper.autoplay.stop();
+  // }, function () {
+  //   (this).swiper.autoplay.start();
+  // });
   var storiesSlider = new Swiper(".stories-slide", {
-    freeMode: true,
-    slidesPerColumnFill: 'column',
-    slidesPerColumn: 1,
+    direction: 'horizontal',
     slidesPerView: 2,
     slidesPerGroup: 2,
+    freeMode: true,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
@@ -41,9 +40,21 @@ $(document).ready(function () {
       prevEl: '.stories__button--prev',
     },
     breakpoints: {
-      680: {
-        slidesPerColumn: 2,
+      640: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
+  });
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      messages: {
+        email: {
+          required: 'We need your email address to contact you',
+          email: 'Your email address must be in the format of name@domain.com',
+        },
+      },
+    });
   });
 });

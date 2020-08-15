@@ -1,15 +1,32 @@
 .newsletter
   background-color: $light-blue
-  background-image: url('../img/oval-1.svg'), url('../img/oval-2.svg')
-  background-position: left, right
-  background-repeat: no-repeat
+  padding: 100px 0
+  margin-bottom: 128px
+  position: relative
+  &__bg
+    &--1
+      position: absolute
+      top: -515px
+      left: -738px
+      width: 1170px
+      height: 954px
+      border: 229px solid rgba(255, 255, 255, 0.05)
+      border-radius: 50%
+    &--2
+      position: absolute
+      bottom: -515px
+      right: -738px
+      width: 1170px
+      height: 954px
+      border: 229px solid rgba(255, 255, 255, 0.05)
+      border-radius: 50%
   &__wrapper
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 100px 0
+    max-width: 1073px
   &-info
-    width: 486px
+    max-width: 486px
     &__titel
       font-size: 48px
       line-height: 60px
@@ -37,7 +54,6 @@
   border-radius: 8px
   border: 1px solid #C3CAD9
   &__input
-    width: 100%
     background-image: url('../img/email.svg')
     background-repeat: no-repeat
     background-position: 20px center
@@ -47,6 +63,7 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
+    border-radius: 8px
   &__button
     font-style: normal
     font-weight: bold
@@ -59,4 +76,5 @@
     border-radius: 4px
     border: none
     margin: 4px
+
 
