@@ -1307,6 +1307,10 @@ template {
   margin-bottom: 76px;
 }
 
+.footer-info {
+  margin-right: 70px;
+}
+
 .footer-info__logo {
   margin-bottom: 11px;
 }
@@ -1317,7 +1321,7 @@ template {
   font-size: 16px;
   line-height: 28px;
   color: #5A7184;
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
   width: 212px;
 }
 
@@ -1334,6 +1338,17 @@ template {
   width: 185px;
 }
 
+.footer-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .footer__titel {
   font-size: 18px;
   line-height: 25px;
@@ -1344,6 +1359,7 @@ template {
 .footer__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer__item {
@@ -1592,6 +1608,9 @@ template {
   .trending-ware__item {
     width: 280px;
   }
+  .stories {
+    padding-bottom: 88px;
+  }
   .stories-slide__wrapper {
     margin-left: 6%;
   }
@@ -1622,6 +1641,25 @@ template {
   .newsletter__subscribe-wrapper {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .footer-wrapper {
+    margin-bottom: 60px;
+  }
+  .footer-blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-produckt, .footer-services, .footer-company, .footer-more {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 48px;
+  }
+  .footer-company, .footer-more {
+    margin-bottom: 0;
   }
 }
 
@@ -1738,9 +1776,6 @@ template {
   .testimonial__titel_hidden {
     display: inline-block;
   }
-  .stories {
-    padding-bottom: 80px;
-  }
   .stories__slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1786,6 +1821,50 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
+  }
+  .footer-info__titel {
+    margin-bottom: 20px;
+  }
+  .footer-info__item {
+    margin-bottom: 15px;
+  }
+  .footer-info__text {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 16px;
+  }
+  .footer-bottom {
+    display: none;
+  }
+  .footer-blocks {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-produckt, .footer-services, .footer-company, .footer-more {
+    margin-bottom: 39px;
   }
 }
 
@@ -2065,11 +2144,29 @@ template {
     border-radius: 8px;
     margin: 0;
   }
+  .stories {
+    padding-bottom: 95px;
+  }
+  .newsletter {
+    padding-bottom: 60px;
+  }
   .newsletter__bg_1 {
     display: none;
   }
   .newsletter__bg_2 {
     display: none;
+  }
+  .footer {
+    padding-top: 50px;
+  }
+  .footer__titel {
+    margin-bottom: 17px;
+  }
+  .footer__item {
+    margin-bottom: 12px;
+  }
+  .footer-produckt, .footer-services, .footer-company, .footer-more {
+    margin-bottom: 43px;
   }
 }
 
