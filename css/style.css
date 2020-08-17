@@ -1156,7 +1156,6 @@ template {
 
 .stories__button {
   border-radius: 50%;
-  border: 1px solid #5A7184;
   width: 56px;
   height: 56px;
   background: transparent;
@@ -1164,6 +1163,7 @@ template {
 }
 
 .stories__button--prev {
+  border: 1px solid #5A7184;
   position: absolute;
   top: 82%;
   right: 95%;
@@ -1173,6 +1173,7 @@ template {
 }
 
 .stories__button--next {
+  border: 1px solid #5A7184;
   position: absolute;
   top: 82%;
   right: 88%;
@@ -1304,7 +1305,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 984px;
-  margin-bottom: 76px;
+  margin-bottom: 95px;
 }
 
 .footer-info {
@@ -1312,7 +1313,7 @@ template {
 }
 
 .footer-info__logo {
-  margin-bottom: 11px;
+  margin-bottom: 25px;
 }
 
 .footer-info__text {
@@ -2158,6 +2159,9 @@ template {
   }
   .footer {
     padding-top: 50px;
+  }
+  .footer-info__logo {
+    margin-bottom: 10px;
   }
   .footer__titel {
     margin-bottom: 17px;

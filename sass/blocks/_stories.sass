@@ -68,12 +68,12 @@
       color: $light-blue
   &__button
     border-radius: 50%
-    border: 1px solid $text-color
     width: 56px
     height: 56px
     background: transparent
     cursor: pointer
     &--prev
+      border: 1px solid $text-color
       position: absolute
       top: 82%
       right: 95%
@@ -81,12 +81,19 @@
       background-repeat: no-repeat
       background-position: center center
     &--next
+      border: 1px solid $text-color
       position: absolute
       top: 82%
       right: 88%
       background-image: url('../img/arrow-next.svg')
       background-repeat: no-repeat
       background-position: center center
+    // &-active
+    //   &_prev
+    //     background-image: url('../img/arrow-prev-active.svg')
+    //   &_next
+    //     background-image: url('../img/arrow-next-active.svg')
+
 
 
 

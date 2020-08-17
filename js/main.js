@@ -57,4 +57,30 @@ $(document).ready(function () {
       },
     });
   });
+
+  var buttonNext = $('.stories__button--next');
+  var buttonPrev = $('.stories__button--prev');
+
+  buttonNext.on('click', function (evet) {
+      buttonNext.css({
+        'background-image': 'url(../img/arrow-next-active.svg)',
+        'border': '1px solid #1565D8'
+      });
+      buttonPrev.css({
+        'background-image': 'url(img/arrow-prev.svg)',
+        'border': '1px solid #5A7184'
+      });
+    }),
+
+    buttonPrev.on('click', function (evet) {
+      buttonPrev.css({
+        'background-image': 'url(../img/arrow-prev-active.svg)',
+        'border': '1px solid #1565D8'
+      });
+      buttonNext.css({
+        'background-image': 'url(img/arrow-next.svg)',
+        'border': '1px solid #5A7184'
+      });
+    })
+
 });
