@@ -1,813 +1,1188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Ehya Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>Ehya Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-menu">
-        <div class="logo">
-          <a href="index.html" class="logo__link"><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img" /></a>
-        </div>
-        <!-- /.logo -->
-        <ul class="header-menu__list header-menu__list--hidden">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Landings</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Pages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Docs</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Help</a>
-          </li>
-          <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
-          </li>
-        </ul>
-        <!-- менюшка для мобилки -->
-        <ul class="header-menu__list header-menu__list--visible">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Landings</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Pages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Docs</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Help</a>
-          </li>
-          <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
-          </li>
-        </ul>
-        <button class="menu-button header-menu__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-        </button>
-      </div>
-      <!-- /.header-menu -->
-    </div>
-    <!-- /.contaoner -->
-  </header>
-  <!-- /.header -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-wrapper">
-        <div class="hashtag hero__hashtag"># READY TO BE COOL</div>
-        <!-- /.hero__hashtag -->
-        <h1 class="hero__titel">
-          Cause Everyone Deserve to be Cool & Fashionable
-        </h1>
-        <p class="hero__text">
-          How you can be a Cool People or Fashionista Society. To solve this
-          you should wear a great clothes and updated your style. You can
-          search here. Explore Now!
-        </p>
-        <button class="hero__button">Take Exploration</button>
-        <div class="hero-payment">
-          <div class="hero-payment__wrapper">
-            <div class="hero-payment__item">
-              <img src="img/Donation.svg" alt="Icon: Payment" class="hero-payment__img" />
-            </div>
-            <!-- /.hero-payment__item --><span class="hero-payment__text">COD Payment</span>
-            <div class="hero-payment__item">
-              <img src="img/Guarantee.svg" alt="Icon: Guarante" class="hero-payment__img" />
-            </div>
-            <!-- /.hero-payment__item -->
-            <span class="hero-payment__text">Guarantee</span>
-            <div class="hero-payment__item">
-              <img src="img/Quality.svg" alt="Icon: Quality" class="hero-payment__img" />
-            </div>
-            <!-- /.hero-payment__item -->
-            <span class="hero-payment__text">Quality</span>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <div class="logo">
+            <a href="index.html" class="logo__link"
+              ><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img"
+            /></a>
           </div>
-        </div>
-        <!-- /.hero-payment -->
-      </div>
-      <!-- /.hero-wrapper -->
-    </div>
-    <!-- /.hero-container -->
-  </section>
-  <!-- /.hero -->
-  <section class="collection">
-    <div class="container">
-      <div class="collection-wrapper">
-        <div class="collection-block">
-          <div class="collection-block__left">
-            <img src="img/collection-1.png" alt="Icon: Woman" class="collection-block__img" />
-          </div>
-          <!-- /.collection-images__item -->
-          <div class="collection-block__right">
-            <div class="collection-block__item">
-              <img src="img/collection-2.png" alt="Icon: Cafe" class="collection-block__img" />
-            </div>
-            <!-- /.collection-block__item -->
-            <div class="collection-block__item">
-              <img src="img/collection-3.png" alt="Icon: Cafe" class="collection-block__img" />
-            </div>
-            <!-- /.collection-block__item -->
-          </div>
-          <!-- /.collection-images__item -->
-        </div>
-        <!-- /.collection-images__card -->
-        <div class="collection-info">
-          <h2 class="collection-info__titel">New Winter Collection</h2>
-          <p class="collection-info__text">
-            Now is Winter Season. Like the season, we choose some outfit and
-            clothes based on Winter season. You can see more this collection
-            by click See More button on below. Let’s buy Our Collection before
-            all they’re gone. Use EHYA20 to get 20% Disc.
-          </p>
-          <button class="collection-info__button">
-            Check Our Collection
-            <img src="img/arrow-next-collection.svg" alt="" class="collection__arrow" />
+          <!-- /.logo -->
+          <ul class="header-menu__list header-menu__list--hidden">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Home</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Landings</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Pages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Docs</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Help</a>
+            </li>
+            <li class="header-menu__item">
+              <button class="button header-menu__button">
+                Get it now
+              </button>
+            </li>
+          </ul>
+          <!-- менюшка для мобилки -->
+          <ul class="header-menu__list header-menu__list--visible">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Home</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Landings</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Pages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Docs</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Help</a>
+            </li>
+            <li class="header-menu__item">
+              <button class="button header-menu__button">
+                Get it now
+              </button>
+            </li>
+          </ul>
+          <button class="menu-button header-menu__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
           </button>
-          <!-- /.collection-block__button -->
         </div>
-        <!-- /.coolection-block__info -->
+        <!-- /.header-menu -->
       </div>
-      <!-- /.collection-wrapper -->
-    </div>
-  </section>
-  <!-- /.collection -->
-  <section class="trending">
-    <div class="container">
-      <div class="tending-wrapper">
-        <div class="trending-navbar">
-          <h2 class="trending__titel">Trending Items</h2>
-          <nav class="trending__tabs">
-            <ul class="trending__list">
-              <li data-target="#newArrival" class="trending__item trending__item--active">
-                New Arrival
-              </li>
-              <li data-target="#bestSellers" class="trending__item">
-                Best Sellers
-              </li>
-              <li data-target="#upcoming" class="trending__item">Upcoming</li>
-            </ul>
-          </nav>
-        </div>
-        <!-- /.trending-navbar -->
-        <div class="trending-ware" id="newArrival">
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-1.png" alt="Icon: Woman" class="trending-ware__img img-1" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Minimalist Style</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-2.png" alt="Icon: Woman" class="trending-ware__img img-2" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Luxury Gown</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$30.6</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-3.png" alt="Icon: Woman" class="trending-ware__img img-3" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Full Coloristy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-4.png" alt="Icon: Woman" class="trending-ware__img img-4" />
-            </div>
-            <!-- /.trending-ware__item -->
-
-            <h6 class="trending-ware__titel">Pinky Winky</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$109</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-5.png" alt="Icon: Woman" class="trending-ware__img img-5" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Holiday Vibes</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$51.2</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-6.png" alt="Icon: Woman" class="trending-ware__img img-6" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$81.3</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell trending-ware__product-cell_hidden">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__wrapper">
-              <div class="trending-ware__see-more">
-                <button class="trending-ware__button">
-                  <img src="img/plus.svg" alt="Icon: plus" class="trending-ware__plus" />
-                  <span class="trending-ware__text">See More Collection</span>
-                </button>
-              </div>
-              <!-- /.trending-ware__see-more -->
-            </div>
-            <!-- /.trending-ware__wrapper -->
-          </div>
-          <!-- /.trending__product-cell -->
-        </div>
-        <!-- /.trending-ware -->
-        <div class="trending-ware trending-ware--active" id="bestSellers">
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-2.png" alt="Icon: Woman" class="trending-ware__img img-2" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Luxury Gown</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$30.6</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-1.png" alt="Icon: Woman" class="trending-ware__img img-1" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Minimalist Style</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-3.png" alt="Icon: Woman" class="trending-ware__img img-3" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Full Coloristy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-4.png" alt="Icon: Woman" class="trending-ware__img img-4" />
-            </div>
-            <!-- /.trending-ware__item -->
-
-            <h6 class="trending-ware__titel">Pinky Winky</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$109</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-6.png" alt="Icon: Woman" class="trending-ware__img img-6" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$81.3</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-5.png" alt="Icon: Woman" class="trending-ware__img img-5" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Holiday Vibes</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$51.2</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell trending-ware__product-cell_hidden">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__wrapper">
-              <div class="trending-ware__see-more">
-                <button class="trending-ware__button">
-                  <img src="img/plus.svg" alt="Icon: plus" class="trending-ware__plus" />
-                  <span class="trending-ware__text">See More Collection</span>
-                </button>
-              </div>
-              <!-- /.trending-ware__see-more -->
-            </div>
-            <!-- /.trending-ware__wrapper -->
-          </div>
-          <!-- /.trending__product-cell -->
-        </div>
-        <!-- /.trending-ware -->
-        <div class="trending-ware" id="upcoming">
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-4.png" alt="Icon: Woman" class="trending-ware__img img-4" />
-            </div>
-            <!-- /.trending-ware__item -->
-
-            <h6 class="trending-ware__titel">Pinky Winky</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$109</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-2.png" alt="Icon: Woman" class="trending-ware__img img-2" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Luxury Gown</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$30.6</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-6.png" alt="Icon: Woman" class="trending-ware__img img-6" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$81.3</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-1.png" alt="Icon: Woman" class="trending-ware__img img-1" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Minimalist Style</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-3.png" alt="Icon: Woman" class="trending-ware__img img-3" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Full Coloristy</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$25.7</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-5.png" alt="Icon: Woman" class="trending-ware__img img-5" />
-              <!-- /.trending-ware__item -->
-            </div>
-            <h6 class="trending-ware__titel">Holiday Vibes</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$51.2</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell trending-ware__product-cell_hidden">
-            <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
-            </div>
-            <!-- /.trending-ware__item -->
-            <h6 class="trending-ware__titel">Red Formal</h6>
-            <div class="trending-ware__buy">
-              <span class="trending-ware__price">$66.8</span>
-              <img src="img/shopping-cart.svg" alt="Icon: Shopping Cart" class="trending-ware__cart" />
-            </div>
-            <!-- /.trending-ware__buy -->
-          </div>
-          <!-- /.trending__product-cell -->
-          <div class="trending-ware__product-cell">
-            <div class="trending-ware__wrapper">
-              <div class="trending-ware__see-more">
-                <button class="trending-ware__button">
-                  <img src="img/plus.svg" alt="Icon: plus" class="trending-ware__plus" />
-                  <span class="trending-ware__text">See More Collection</span>
-                </button>
-              </div>
-              <!-- /.trending-ware__see-more -->
-            </div>
-            <!-- /.trending-ware__wrapper -->
-          </div>
-          <!-- /.trending__product-cell -->
-        </div>
-        <!-- /.trending-ware -->
-      </div>
-      <!-- /.tending-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.trending -->
-  <section class="testimonial">
-    <div class="container">
-      <div class="swiper-container testimonial-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonial-slider__item">
-              <div class="testimonial__item">
-                <img src="img/quote-left.svg" alt="Icon: Quote Left" class="testimonial__quote" />
-              </div>
-              <p class="testimonial__text">
-                "I absolutely love the designs and styles that Ehya
-                creates..They are so different and innovative. I have bought
-                several times from the collections and what I love is that
-                they really are timeless pieces and the quality of the fabric
-                is devine.... I look forward to seeing the new collections
-                from season to season”
-              </p>
-              <h6 class="testimonial__titel">
-                <span class="testimonial__titel_hidden">-</span>
-                Alicia Puma - Fashun Customer
-              </h6>
-            </div>
-            <!-- /.testimonial-slider__item -->
-          </div>
-          <!-- /.swiper-slide -->
-          <div class="swiper-slide">
-            <div class="testimonial-slider__item">
-              <div class="testimonial__item">
-                <img src="img/quote-left.svg" alt="Icon: Quote Left" class="testimonial__quote" />
-              </div>
-              <p class="testimonial__text">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo tenetur commodi saepe eos veritatis quasi dolore,
-                sapiente blanditiis rerum, quam voluptate quae, magni
-                reprehenderit! Neque numquam voluptatem iure temporibus quos
-                nisi possimus. Velit accusamus blanditiis nobis, iusto
-                corporis debitis possimus, minima alias consequuntur illum,
-                inventore illo in corrupti et qui? Ab, sit laborum eligendi
-                nihil delectus quae sint dolores!”
-              </p>
-              <h6 class="testimonial__titel">
-                Alicia Puma - Fashun Customer
-              </h6>
-            </div>
-            <!-- /.testimonial-slider__item -->
-          </div>
-          <!-- /.swiper-slide -->
-          <div class="swiper-slide">
-            <div class="testimonial-slider__item">
-              <div class="testimonial__item">
-                <img src="img/quote-left.svg" alt="Icon: Quote Left" class="testimonial__quote" />
-              </div>
-              <p class="testimonial__text">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Odit, expedita fugiat eum, quidem distinctio voluptates
-                officiis vel consequatur explicabo facilis aliquid. Pariatur
-                nulla optio numquam mollitia? Quae vero libero perferendis
-                maxime ullam qui, ab, excepturi sed officiis error, nesciunt
-                quibusdam.”
-              </p>
-              <h6 class="testimonial__titel">
-                Alicia Puma - Fashun Customer
-              </h6>
-            </div>
-            <!-- /.testimonial-slider__item -->
-          </div>
-          <!-- /.swiper-slide -->
-          <div class="swiper-slide">
-            <div class="testimonial-slider__item">
-              <div class="testimonial__item">
-                <img src="img/quote-left.svg" alt="Icon: Quote Left" class="testimonial__quote" />
-              </div>
-              <p class="testimonial__text">
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae repudiandae voluptatum temporibus, dolorem, et
-                labore est nisi suscipit corporis voluptatem voluptate quos
-                ipsa aliquid, qui aperiam. Veritatis iure quae iusto vero quia
-                ex, asperiores voluptate nobis, voluptatem dolores natus ea
-                officia, incidunt neque voluptatum pariatur ratione eligendi
-                maiores aspernatur. Quas distinctio provident eius eligendi,
-                eos iste est ducimus ut voluptatum nisi amet sed hic beatae
-                minus. Nulla dignissimos ea a impedit?”
-              </p>
-              <h6 class="testimonial__titel">
-                Alicia Puma - Fashun Customer
-              </h6>
-            </div>
-            <!-- /.testimonial-slider__item -->
-          </div>
-          <!-- /.swiper-slide -->
-        </div>
-        <!-- /.swiper-wrapper -->
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- /.swiper-container testimonial-slider -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.testimonial -->
-  <section class="stories">
-    <div class="container">
-      <div class="stories-wrapper">
-        <div class="stories-info">
-          <div class="hashtag stories__hashtag">STORIES</div>
+      <!-- /.contaoner -->
+    </header>
+    <!-- /.header -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-wrapper">
+          <div class="hashtag hero__hashtag"># READY TO BE COOL</div>
           <!-- /.hero__hashtag -->
-          <h2 class="stories-info__titel">This is Fashun Story</h2>
-          <p class="stories-info__text">
-            Check our story about fashion for reference and your style.
-            Written by our designer and specialist.
+          <h1 class="hero__titel">
+            Cause Everyone Deserve to be Cool & Fashionable
+          </h1>
+          <p class="hero__text">
+            How you can be a Cool People or Fashionista Society. To solve this
+            you should wear a great clothes and updated your style. You can
+            search here. Explore Now!
           </p>
+          <button class="hero__button">Take Exploration</button>
+          <div class="hero-payment">
+            <div class="hero-payment__wrapper">
+              <div class="hero-payment__item">
+                <img
+                  src="img/Donation.svg"
+                  alt="Icon: Payment"
+                  class="hero-payment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item --><span class="hero-payment__text"
+                >COD Payment</span
+              >
+              <div class="hero-payment__item">
+                <img
+                  src="img/Guarantee.svg"
+                  alt="Icon: Guarante"
+                  class="hero-payment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item -->
+              <span class="hero-payment__text">Guarantee</span>
+              <div class="hero-payment__item">
+                <img
+                  src="img/Quality.svg"
+                  alt="Icon: Quality"
+                  class="hero-payment__img"
+                />
+              </div>
+              <!-- /.hero-payment__item -->
+              <span class="hero-payment__text">Quality</span>
+            </div>
+          </div>
+          <!-- /.hero-payment -->
         </div>
-        <!-- /.stories-inf -->
-        <div class="swiper-container stories-slide stories__slide">
+        <!-- /.hero-wrapper -->
+      </div>
+      <!-- /.hero-container -->
+    </section>
+    <!-- /.hero -->
+    <section class="collection">
+      <div class="container">
+        <div class="collection-wrapper">
+          <div class="collection-block">
+            <div class="collection-block__left">
+              <img
+                src="img/collection-1.png"
+                alt="Icon: Woman"
+                class="collection-block__img"
+              />
+            </div>
+            <!-- /.collection-images__item -->
+            <div class="collection-block__right">
+              <div class="collection-block__item">
+                <img
+                  src="img/collection-2.png"
+                  alt="Icon: Cafe"
+                  class="collection-block__img"
+                />
+              </div>
+              <!-- /.collection-block__item -->
+              <div class="collection-block__item">
+                <img
+                  src="img/collection-3.png"
+                  alt="Icon: Cafe"
+                  class="collection-block__img"
+                />
+              </div>
+              <!-- /.collection-block__item -->
+            </div>
+            <!-- /.collection-images__item -->
+          </div>
+          <!-- /.collection-images__card -->
+          <div class="collection-info">
+            <h2 class="collection-info__titel">New Winter Collection</h2>
+            <p class="collection-info__text">
+              Now is Winter Season. Like the season, we choose some outfit and
+              clothes based on Winter season. You can see more this collection
+              by click See More button on below. Let’s buy Our Collection before
+              all they’re gone. Use EHYA20 to get 20% Disc.
+            </p>
+            <button class="collection-info__button">
+              Check Our Collection
+              <img
+                src="img/arrow-next-collection.svg"
+                alt=""
+                class="collection__arrow"
+              />
+            </button>
+            <!-- /.collection-block__button -->
+          </div>
+          <!-- /.coolection-block__info -->
+        </div>
+        <!-- /.collection-wrapper -->
+      </div>
+    </section>
+    <!-- /.collection -->
+    <section class="trending">
+      <div class="container">
+        <div class="tending-wrapper">
+          <div class="trending-navbar">
+            <h2 class="trending__titel">Trending Items</h2>
+            <nav class="trending__tabs">
+              <ul class="trending__list">
+                <li
+                  data-target="#newArrival"
+                  class="trending__item trending__item--active"
+                >
+                  New Arrival
+                </li>
+                <li data-target="#bestSellers" class="trending__item">
+                  Best Sellers
+                </li>
+                <li data-target="#upcoming" class="trending__item">Upcoming</li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.trending-navbar -->
+          <div class="trending-ware" id="newArrival">
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-1.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-1"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Minimalist Style</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-2.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-2"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Luxury Gown</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$30.6</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-3.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-3"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Full Coloristy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-4.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-4"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+
+              <h6 class="trending-ware__titel">Pinky Winky</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$109</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-5.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-5"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Holiday Vibes</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$51.2</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-6.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-6"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$81.3</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div
+              class="trending-ware__product-cell trending-ware__product-cell_hidden"
+            >
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__wrapper">
+                <div class="trending-ware__see-more">
+                  <button class="trending-ware__button">
+                    <img
+                      src="img/plus.svg"
+                      alt="Icon: plus"
+                      class="trending-ware__plus"
+                    />
+                    <span class="trending-ware__text">See More Collection</span>
+                  </button>
+                </div>
+                <!-- /.trending-ware__see-more -->
+              </div>
+              <!-- /.trending-ware__wrapper -->
+            </div>
+            <!-- /.trending__product-cell -->
+          </div>
+          <!-- /.trending-ware -->
+          <div class="trending-ware trending-ware--active" id="bestSellers">
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-2.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-2"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Luxury Gown</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$30.6</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-1.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-1"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Minimalist Style</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-3.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-3"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Full Coloristy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-4.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-4"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+
+              <h6 class="trending-ware__titel">Pinky Winky</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$109</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-6.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-6"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$81.3</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-5.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-5"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Holiday Vibes</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$51.2</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div
+              class="trending-ware__product-cell trending-ware__product-cell_hidden"
+            >
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__wrapper">
+                <div class="trending-ware__see-more">
+                  <button class="trending-ware__button">
+                    <img
+                      src="img/plus.svg"
+                      alt="Icon: plus"
+                      class="trending-ware__plus"
+                    />
+                    <span class="trending-ware__text">See More Collection</span>
+                  </button>
+                </div>
+                <!-- /.trending-ware__see-more -->
+              </div>
+              <!-- /.trending-ware__wrapper -->
+            </div>
+            <!-- /.trending__product-cell -->
+          </div>
+          <!-- /.trending-ware -->
+          <div class="trending-ware" id="upcoming">
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-4.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-4"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+
+              <h6 class="trending-ware__titel">Pinky Winky</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$109</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-2.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-2"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Luxury Gown</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$30.6</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-6.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-6"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$81.3</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-1.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-1"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Minimalist Style</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-3.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-3"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Full Coloristy</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$25.7</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-5.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-5"
+                />
+                <!-- /.trending-ware__item -->
+              </div>
+              <h6 class="trending-ware__titel">Holiday Vibes</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$51.2</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div
+              class="trending-ware__product-cell trending-ware__product-cell_hidden"
+            >
+              <div class="trending-ware__item">
+                <img
+                  src="img/Trending-7.png"
+                  alt="Icon: Woman"
+                  class="trending-ware__img img-7"
+                />
+              </div>
+              <!-- /.trending-ware__item -->
+              <h6 class="trending-ware__titel">Red Formal</h6>
+              <div class="trending-ware__buy">
+                <span class="trending-ware__price">$66.8</span>
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Icon: Shopping Cart"
+                  class="trending-ware__cart"
+                />
+              </div>
+              <!-- /.trending-ware__buy -->
+            </div>
+            <!-- /.trending__product-cell -->
+            <div class="trending-ware__product-cell">
+              <div class="trending-ware__wrapper">
+                <div class="trending-ware__see-more">
+                  <button class="trending-ware__button">
+                    <img
+                      src="img/plus.svg"
+                      alt="Icon: plus"
+                      class="trending-ware__plus"
+                    />
+                    <span class="trending-ware__text">See More Collection</span>
+                  </button>
+                </div>
+                <!-- /.trending-ware__see-more -->
+              </div>
+              <!-- /.trending-ware__wrapper -->
+            </div>
+            <!-- /.trending__product-cell -->
+          </div>
+          <!-- /.trending-ware -->
+        </div>
+        <!-- /.tending-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.trending -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="swiper-container testimonial-slider">
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide stories-slide__card">
-              <div class="stories-slide__wrapper">
-                <div class="stories-slide__item">
-                  <img src="img/stories-1.png" alt="" class="stories-slide__img" />
+            <div class="swiper-slide">
+              <div class="testimonial-slider__item">
+                <div class="testimonial__item">
+                  <img
+                    src="img/quote-left.svg"
+                    alt="Icon: Quote Left"
+                    class="testimonial__quote"
+                  />
                 </div>
-                <!-- /.stories-slider__item -->
-                <div class="stories-slide__info">
-                  <h4 class="stories-slide__titel">
-                    Mix & Match Style 01: Casual Style x Formal Style Look
-                  </h4>
-                  <a href="#" class="stories-slide__link">Read More</a>
-                </div>
-                <!-- /.stories-slider__info -->
+                <p class="testimonial__text">
+                  "I absolutely love the designs and styles that Ehya
+                  creates..They are so different and innovative. I have bought
+                  several times from the collections and what I love is that
+                  they really are timeless pieces and the quality of the fabric
+                  is devine.... I look forward to seeing the new collections
+                  from season to season”
+                </p>
+                <h6 class="testimonial__titel">
+                  <span class="testimonial__titel_hidden">-</span>
+                  Alicia Puma - Fashun Customer
+                </h6>
               </div>
-              <!-- /.stories-slider__wrapper -->
+              <!-- /.testimonial-slider__item -->
             </div>
-            <!-- /.swipe-slide -->
-            <div class="swiper-slide stories-slide__card">
-              <div class="stories-slide__wrapper">
-                <div class="stories-slide__item">
-                  <img src="img/stories-2.png" alt="" class="stories-slide__img" />
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="testimonial-slider__item">
+                <div class="testimonial__item">
+                  <img
+                    src="img/quote-left.svg"
+                    alt="Icon: Quote Left"
+                    class="testimonial__quote"
+                  />
                 </div>
-                <!-- /.stories-slider__item -->
-                <div class="stories-slide__info">
-                  <h4 class="stories-slide__titel">
-                    Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YKk
-                  </h4>
-                  <a href="#" class="stories-slide__link">Read More</a>
-                </div>
-                <!-- /.stories-slider__info -->
+                <p class="testimonial__text">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo tenetur commodi saepe eos veritatis quasi dolore,
+                  sapiente blanditiis rerum, quam voluptate quae, magni
+                  reprehenderit! Neque numquam voluptatem iure temporibus quos
+                  nisi possimus. Velit accusamus blanditiis nobis, iusto
+                  corporis debitis possimus, minima alias consequuntur illum,
+                  inventore illo in corrupti et qui? Ab, sit laborum eligendi
+                  nihil delectus quae sint dolores!”
+                </p>
+                <h6 class="testimonial__titel">
+                  Alicia Puma - Fashun Customer
+                </h6>
               </div>
-              <!-- /.stories-slider__wrapper -->
+              <!-- /.testimonial-slider__item -->
             </div>
-            <!-- /.swipe-slide -->
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="testimonial-slider__item">
+                <div class="testimonial__item">
+                  <img
+                    src="img/quote-left.svg"
+                    alt="Icon: Quote Left"
+                    class="testimonial__quote"
+                  />
+                </div>
+                <p class="testimonial__text">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit, expedita fugiat eum, quidem distinctio voluptates
+                  officiis vel consequatur explicabo facilis aliquid. Pariatur
+                  nulla optio numquam mollitia? Quae vero libero perferendis
+                  maxime ullam qui, ab, excepturi sed officiis error, nesciunt
+                  quibusdam.”
+                </p>
+                <h6 class="testimonial__titel">
+                  Alicia Puma - Fashun Customer
+                </h6>
+              </div>
+              <!-- /.testimonial-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="testimonial-slider__item">
+                <div class="testimonial__item">
+                  <img
+                    src="img/quote-left.svg"
+                    alt="Icon: Quote Left"
+                    class="testimonial__quote"
+                  />
+                </div>
+                <p class="testimonial__text">
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae repudiandae voluptatum temporibus, dolorem, et
+                  labore est nisi suscipit corporis voluptatem voluptate quos
+                  ipsa aliquid, qui aperiam. Veritatis iure quae iusto vero quia
+                  ex, asperiores voluptate nobis, voluptatem dolores natus ea
+                  officia, incidunt neque voluptatum pariatur ratione eligendi
+                  maiores aspernatur. Quas distinctio provident eius eligendi,
+                  eos iste est ducimus ut voluptatum nisi amet sed hic beatae
+                  minus. Nulla dignissimos ea a impedit?”
+                </p>
+                <h6 class="testimonial__titel">
+                  Alicia Puma - Fashun Customer
+                </h6>
+              </div>
+              <!-- /.testimonial-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- /.swiper-container -->
-        <button class="stories__button stories__button--prev"></button>
-        <button class="stories__button stories__button--next"></button>
+        <!-- /.swiper-container testimonial-slider -->
       </div>
-      <!-- /.stories-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.stories -->
-  <div class="newsletter">
-    <div class="newsletter__bg--1"></div>
-    <div class="newsletter__bg--2"></div>
-    <div class="container">
-      <div class="newsletter__wrapper">
-        <div class="newsletter-info">
-          <h2 class="newsletter-info__titel">Join Our Newsletter</h2>
-          <p class="newsletter-info__text">
-            Just insert your email into the field below. And you will get the
-            updates about fashion & styles from us.
-          </p>
-        </div>
-        <!-- /.newsletter-info -->
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-          <div class="newsletter__subscribe-wrapper subscribe__wrapper_input">
-            <input type="email" class="subscribe__input" placeholder="Your Email" name="email" required />
+      <!-- /.container -->
+    </section>
+    <!-- /.testimonial -->
+    <section class="stories">
+      <div class="container">
+        <div class="stories-wrapper">
+          <div class="stories-info">
+            <div class="hashtag stories__hashtag">STORIES</div>
+            <!-- /.hero__hashtag -->
+            <h2 class="stories-info__titel">This is Fashun Story</h2>
+            <p class="stories-info__text">
+              Check our story about fashion for reference and your style.
+              Written by our designer and specialist.
+            </p>
           </div>
-          <!-- /.modal__wrapper -->
+          <!-- /.stories-inf -->
+          <div class="swiper-container stories-slide stories__slide">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide stories-slide__card">
+                <div class="stories-slide__wrapper">
+                  <div class="stories-slide__item">
+                    <img
+                      src="img/stories-1.png"
+                      alt=""
+                      class="stories-slide__img"
+                    />
+                  </div>
+                  <!-- /.stories-slider__item -->
+                  <div class="stories-slide__info">
+                    <h4 class="stories-slide__titel">
+                      Mix & Match Style 01: Casual Style x Formal Style Look
+                    </h4>
+                    <a href="#" class="stories-slide__link">Read More</a>
+                  </div>
+                  <!-- /.stories-slider__info -->
+                </div>
+                <!-- /.stories-slider__wrapper -->
+              </div>
+              <!-- /.swipe-slide -->
+              <div class="swiper-slide stories-slide__card">
+                <div class="stories-slide__wrapper">
+                  <div class="stories-slide__item">
+                    <img
+                      src="img/stories-2.png"
+                      alt=""
+                      class="stories-slide__img"
+                    />
+                  </div>
+                  <!-- /.stories-slider__item -->
+                  <div class="stories-slide__info">
+                    <h4 class="stories-slide__titel">
+                      Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YKk
+                    </h4>
+                    <a href="#" class="stories-slide__link">Read More</a>
+                  </div>
+                  <!-- /.stories-slider__info -->
+                </div>
+                <!-- /.stories-slider__wrapper -->
+              </div>
+              <!-- /.swipe-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper-container -->
+          <button class="stories__button stories__button--prev"></button>
+          <button class="stories__button stories__button--next"></button>
+        </div>
+        <!-- /.stories-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.stories -->
+    <div class="newsletter">
+      <div class="newsletter__bg_1"></div>
+      <div class="newsletter__bg_2"></div>
+      <div class="container">
+        <div class="newsletter__wrapper">
+          <div class="newsletter-info">
+            <h2 class="newsletter-info__titel">Join Our Newsletter</h2>
+            <p class="newsletter-info__text">
+              Just insert your email into the field below. And you will get the
+              updates about fashion & styles from us.
+            </p>
+          </div>
+          <!-- /.newsletter-info -->
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+          >
+            <div class="newsletter__subscribe-wrapper subscribe__wrapper_input">
+              <input
+                type="email"
+                class="subscribe__input"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
+            </div>
+            <!-- /.modal__wrapper -->
 
-          <button class="subscribe__button">Subscribe</button>
-        </form>
-        <!-- /.search -->
+            <button class="subscribe__button">Subscribe</button>
+          </form>
+          <!-- /.search -->
+        </div>
+        <!-- /.newsletter__wrapper -->
       </div>
-      <!-- /.newsletter__wrapper -->
+      <!-- /.container -->
     </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.newsletter -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-wrapper">
-        <div class="footer-info">
-          <a href="index.html" class="footer-info__link"><img src="img/Logo.svg" alt="Icon: Logo Ehya"
-              class="footer-info__logo"></a>
-          <p class="footer-info__text">Build a modern and creative website with crealand</p>
-          <div class="footer-info__social">
-            <div class="footer-info__icon"><a href="#" class="footer-info__icon-link"><img src="img/google.svg"
-                  alt="Icon: Goggle" class="footer-info__google"></a></div>
-            <div class="footer-info__icon"><a href="#" class="footer-info__icon-link"><img src="" alt=""
-                  class="footer-info__twitter"></a></div>
-            <div class="footer-info__icon"><a href="#" class="footer-info__icon-link"><img src="" alt=""
-                  class="footer-info__instagram"></a></div>
-            <div class="footer-info__icon"><a href="#" class="footer-info__icon-link"><img src="" alt=""
-                  class="footer-info__in"></a></div>
+    <!-- /.newsletter -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-info">
+            <a href="index.html" class="footer-info__link"
+              ><img
+                src="img/Logo.svg"
+                alt="Icon: Logo Ehya"
+                class="footer-info__logo"
+            /></a>
+
+            <p class="footer-info__text">
+              Build a modern and creative website with crealand
+            </p>
+            <div class="footer-info__social">
+              <div class="footer-info__icon">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  class="footer-info__icon-link"
+                  ><img
+                    src="img/google.svg"
+                    alt="Icon: Goggle"
+                    class="footer-info__google"
+                /></a>
+              </div>
+              <div class="footer-info__icon">
+                <a
+                  target="_blank"
+                  href="https://twitter.com"
+                  class="footer-info__icon-link"
+                  ><img
+                    src="img/twitter.svg"
+                    alt="Icon^ Twitter"
+                    class="footer-info__twitter"
+                /></a>
+              </div>
+              <div class="footer-info__icon">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com"
+                  class="footer-info__icon-link"
+                  ><img
+                    src="img/instagram.svg"
+                    alt="Icon: Instagram"
+                    class="footer-info__instagram"
+                /></a>
+              </div>
+              <div class="footer-info__icon">
+                <a
+                  target="_blank"
+                  href="https://ru.linkedin.com/"
+                  class="footer-info__icon-link"
+                  ><img
+                    src="img/in.svg"
+                    alt="Icon: Linkedin"
+                    class="footer-info__in"
+                /></a>
+              </div>
+            </div>
+            <!-- /.footer-info__social -->
           </div>
-          <!-- /.footer-info__social -->
+          <!-- /.footer-info -->
+          <div class="footer-produckt">
+            <h2 class="footer__titel">Product</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Landingpage</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Referral Program</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-produckt -->
+          <div class="footer-services">
+            <h2 class="footer__titel">Services</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Design</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Themes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Illustrations</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">UI Kit</a>
+              </li>
+            </ul>
+            <a href="#" class="footer__link"></a>
+          </div>
+          <!-- /.footer-services -->
+          <div class="footer-company">
+            <h2 class="footer__titel">Company</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-company -->
+          <div class="footer-more">
+            <h2 class="footer__titel">more</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">License</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Changelog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-company -->
         </div>
-        <!-- /.footer-info -->
-        <div class="footer-produckt">
-          <h2 class="footer__titel">Product</h2>
-          <ul class="footer__list">
-            <li class="footer__link">Landingpage</li>
-            <li class="footer__link">Features</li>
-            <li class="footer__link">Documentation</li>
-            <li class="footer__link">Referral Program</li>
-            <li class="footer__link">Pricing</li>
-          </ul>
-        </div>
-        <!-- /.footer-produckt -->
-        <div class="footer-services">
-          <h2 class="footer__titel">Services</h2>
-          <ul class="footer__list">
-            <li class="footer__link">Documentation</li>
-            <li class="footer__link">Design</li>
-            <li class="footer__link">Themes</li>
-            <li class="footer__link">Illustrations</li>
-            <li class="footer__link">UI Kit</li>
-          </ul>
-        </div>
-        <!-- /.footer-services -->
-        <div class="footer-company">
-          <h2 class="footer__titel">Company</h2>
-          <ul class="footer__list">
-            <li class="footer__link">About</li>
-            <li class="footer__link">Terms</li>
-            <li class="footer__link">Privacy Policy</li>
-            <li class="footer__link">Careers</li>
-          </ul>
-        </div>
-        <!-- /.footer-company -->
-        <div class="footer-more">
-          <h2 class="footer__titel">more</h2>
-          <ul class="footer__list">
-            <li class="footer__link">Documentation</li>
-            <li class="footer__link">License</li>
-            <li class="footer__link">Changelog</li>
-          </ul>
-        </div>
-        <!-- /.footer-company -->
+        <!-- /.footer-wrapper -->
         <div class="footer-bottom">
-          <div class="footer-bottom__img"><img src="img/Heart.svg" alt="Icon: heart" class="footer-bottom__heart"></div>
-          <span class="footer-bottom__info">Copyright © 2019. Crafted with love.</span>
+          <div class="footer-bottom__img">
+            <img
+              src="img/Heart.svg"
+              alt="Icon: heart"
+              class="footer-bottom__heart"
+            />
+          </div>
+          <span class="footer-bottom__info"
+            >Copyright © 2019. Crafted with love.</span
+          >
         </div>
         <!-- /.footer-bottom -->
       </div>
-      <!-- /.footer-wrapper -->
-    </div>
-    <!-- /.container -->
-  </footer>
-  <!-- /.footer -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
