@@ -1,31 +1,103 @@
 @media ( max-width: 768px)
+  body
+    padding-top: 102px
   .container
     max-width: 85%
   .header
     padding-top: 8px
     padding-bottom: 29px
+    background-color: $light
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
     &-menu
       height: 65px
       &__list
-        &--hidden
-          display: none
+        display: none
+        position: fixed
+        left: 0
+        right: 0
+        top: 18px
+        background-color: $light
+        border: 1
+        width: 95%
+        margin: auto
+        &_visible
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          height: 350px
+          overflow: scroll
+          padding: 36px 32px 0 32px
+      &__item
+        margin-bottom: 20px
+        width: 100%
+      &__button
+        width: 100%
       &__menu-button
         display: flex
-        justify-content: space-between
-        flex-direction: column
-        background-color: #ffffff
+        // justify-content: space-between
+        // flex-direction: column
+        background-color: $light
         border: none
         cursor: pointer
         width: 22px
         height: 20px
         padding: 0
+          
   .menu-button
+    display: block
+    position: absolute
+    right: 35px
+    top: 40px
+    width: 30px
+    height: 2px
+    background-color: $dark
+    border: none
+    cursor: pointer
+    &:before 
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      width: 30px
+      height: 2px
+      background-color: $dark
+      transition: transform 0.2s
+      margin-top: -7px
+    &:after 
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      width: 30px
+      height: 2px
+      background-color: $dark
+      transition: transform 0.2s
+      margin-top: 7px
+    &--active 
+      height: 0
+      &:before 
+        transform: rotate(45deg)
+        margin-top: 0
+      &:after 
+        transform: rotate(-45deg)
+        margin-top: 0
     &__line
       display: inline-block
       height: 2px
       width: 100%
       background-color: $dark
       border-radius: 5px
+      &:focus
+        background-color: red
+        
   .hero
     padding-bottom: 80px
     margin: 0
@@ -84,17 +156,28 @@
       &_hidden
         display: inline-block
   .stories
+    &-info
+      &__text
+        max-width: 510px
     &__slide
       display: flex
+      // flex-direction: column;
+      // width: 100%
+      // height: 100%
       flex-wrap: wrap
       margin-top: 130px
       width: 693px
     &-slide
-      margin-left: -41px
+      margin-left: -28px
       &__wrapper
         margin-left: 0
+        // height: 50%
       &__card
-        margin-right: 10px
+        // display: flex
+        // align-items: center
+        // flex-direction: column
+        margin-right: 4px
+        // width: 100% !important
     &__button
       &--prev
         top: 34%

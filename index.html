@@ -11,14 +11,14 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header  header__mobile_fixed">
     <div class="container">
       <div class="header-menu">
         <div class="logo">
           <a href="index.html" class="logo__link"><img src="img/Logo.svg" alt="Icon: Logo" class="logo__img" /></a>
         </div>
         <!-- /.logo -->
-        <ul class="header-menu__list header-menu__list--hidden">
+        <ul class="header-menu__list">
           <li class="header-menu__item">
             <a href="#" class="header-menu__link">Home</a>
           </li>
@@ -41,32 +41,10 @@
           </li>
         </ul>
         <!-- менюшка для мобилки -->
-        <ul class="header-menu__list header-menu__list--visible">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Home</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Landings</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Pages</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Docs</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">Help</a>
-          </li>
-          <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
-          </li>
-        </ul>
         <button class="menu-button header-menu__menu-button">
+          <!-- <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span> -->
         </button>
       </div>
       <!-- /.header-menu -->
@@ -653,11 +631,25 @@
             Written by our designer and specialist.
           </p>
         </div>
-        <!-- /.stories-inf -->
+        <!-- /.stories-info -->
         <div class="swiper-container stories-slide stories__slide">
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide stories-slide__card">
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/stories-1.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Mix & Match Style 01: Casual Style x Formal Style Look
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
               <div class="stories-slide__wrapper">
                 <div class="stories-slide__item">
                   <img src="img/stories-1.png" alt="" class="stories-slide__img" />
@@ -689,10 +681,87 @@
                 <!-- /.stories-slider__info -->
               </div>
               <!-- /.stories-slider__wrapper -->
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/stories-2.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YKk
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
+            </div>
+            <!-- /.swipe-slide -->
+            <div class="swiper-slide stories-slide__card">
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/Trending-1.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Mix & Match Style 01: Casual Style x Formal Style Look
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/Trending-1.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Mix & Match Style 01: Casual Style x Formal Style Look
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
+            </div>
+            <!-- /.swipe-slide -->
+            <div class="swiper-slide stories-slide__card">
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/Trending-2.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YKk
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
+              <div class="stories-slide__wrapper">
+                <div class="stories-slide__item">
+                  <img src="img/Trending-2.png" alt="" class="stories-slide__img" />
+                </div>
+                <!-- /.stories-slider__item -->
+                <div class="stories-slide__info">
+                  <h4 class="stories-slide__titel">
+                    Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YKk
+                  </h4>
+                  <a href="#" class="stories-slide__link">Read More</a>
+                </div>
+                <!-- /.stories-slider__info -->
+              </div>
+              <!-- /.stories-slider__wrapper -->
             </div>
             <!-- /.swipe-slide -->
           </div>
           <!-- /.swiper-wrapper -->
+
         </div>
         <!-- /.swiper-container -->
         <button id="prev" class="stories__button stories__button--prev stories__button-active_prev"></button>
