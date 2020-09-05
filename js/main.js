@@ -65,21 +65,21 @@ $(document).ready(function () {
 
   buttonNext.on("click", function (evet) {
       buttonNext.css({
-        "background-image": "url(../img/arrow-next-active.svg)",
+        "background-image": "url('img/arrow-next-active.svg')",
         border: "2px solid #183B56",
       });
       buttonPrev.css({
-        "background-image": "url(../img/arrow-prev.svg)",
+        "background-image": "url('img/arrow-prev.svg')",
         border: "2px solid #5A7184",
       });
     }),
     buttonPrev.on("click", function (evet) {
       buttonPrev.css({
-        "background-image": "url(../img/arrow-prev-active.svg)",
+        "background-image": "url('img/arrow-prev-active.svg')",
         border: "2px solid #183B56",
       });
       buttonNext.css({
-        "background-image": "url(img/arrow-next.svg)",
+        "background-image": "url('img/arrow-next.svg')",
         border: "2px solid #5A7184",
       });
     });

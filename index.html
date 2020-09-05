@@ -4,14 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
   <title>Ehya Shop</title>
+  <!-- <link rel="manifest" href="manifest.json" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header class="header  header__mobile_fixed">
+  <header class="header header__mobile_fixed">
     <div class="container">
       <div class="header-menu">
         <div class="logo">
@@ -35,9 +45,7 @@
             <a href="#" class="header-menu__link">Help</a>
           </li>
           <li class="header-menu__item">
-            <button class="button header-menu__button">
-              Get it now
-            </button>
+            <button class="button header-menu__button">Get it now</button>
           </li>
         </ul>
         <!-- менюшка для мобилки -->
@@ -206,7 +214,7 @@
           <!-- /.trending__product-cell -->
           <div class="trending-ware__product-cell">
             <div class="trending-ware__item">
-              <img src="img/Trending-5.png" alt="Icon: Woman" class="trending-ware__img img-5" />
+              <img src="img/Trending-5.webp" alt="Icon: Woman" class="trending-ware__img img-5" />
               <!-- /.trending-ware__item -->
             </div>
             <h6 class="trending-ware__titel">Holiday Vibes</h6>
@@ -219,7 +227,7 @@
           <!-- /.trending__product-cell -->
           <div class="trending-ware__product-cell">
             <div class="trending-ware__item">
-              <img src="img/Trending-6.png" alt="Icon: Woman" class="trending-ware__img img-6" />
+              <img src="img/Trending-6.webp" alt="Icon: Woman" class="trending-ware__img img-6" />
               <!-- /.trending-ware__item -->
             </div>
             <h6 class="trending-ware__titel">Swaggie Shaggy</h6>
@@ -232,7 +240,7 @@
           <!-- /.trending__product-cell -->
           <div class="trending-ware__product-cell">
             <div class="trending-ware__item">
-              <img src="img/Trending-7.png" alt="Icon: Woman" class="trending-ware__img img-7" />
+              <img src="img/Trending-7.webp" alt="Icon: Woman" class="trending-ware__img img-7" />
             </div>
             <!-- /.trending-ware__item -->
             <h6 class="trending-ware__titel">Red Formal</h6>
@@ -259,10 +267,10 @@
           <div class="trending-ware__product-cell">
             <div class="trending-ware__wrapper">
               <div class="trending-ware__see-more">
-                <button class="trending-ware__button">
+                <a class="trending-ware__button">
                   <img src="img/plus.svg" alt="Icon: plus" class="trending-ware__plus" />
                   <span class="trending-ware__text">See More Collection</span>
-                </button>
+                </a>
               </div>
               <!-- /.trending-ware__see-more -->
             </div>
@@ -502,10 +510,11 @@
           <div class="trending-ware__product-cell">
             <div class="trending-ware__wrapper">
               <div class="trending-ware__see-more">
-                <button class="trending-ware__button">
+                <a href="#" class="trending-ware__button">
                   <img src="img/plus.svg" alt="Icon: plus" class="trending-ware__plus" />
                   <span class="trending-ware__text">See More Collection</span>
-                </button>
+                  <!-- /.trending-ware__link -->
+                </a>
               </div>
               <!-- /.trending-ware__see-more -->
             </div>
@@ -761,7 +770,6 @@
             <!-- /.swipe-slide -->
           </div>
           <!-- /.swiper-wrapper -->
-
         </div>
         <!-- /.swiper-container -->
         <button id="prev" class="stories__button stories__button--prev stories__button-active_prev"></button>

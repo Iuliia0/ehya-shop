@@ -952,6 +952,10 @@ template {
   background-color: transparent;
 }
 
+.trending-ware__link {
+  cursor: pointer;
+}
+
 .trending-ware__plus {
   margin-bottom: 35px;
 }
