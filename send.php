@@ -64,3 +64,6 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thanks.html');
+
+header("Cache-control: public");
+header("Expires: " . gmdate("D, d M Y H:i:s", time() + 60*60) . " GMT");
